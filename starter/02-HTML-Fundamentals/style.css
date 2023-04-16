@@ -1,0 +1,72 @@
+body {
+  margin: 10px;
+  font-family: sans-serif;
+}
+
+a:link {
+  text-decoration: underline;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+article {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  width: 70%;
+}
+
+h3 {
+  position: relative;
+}
+
+h3::before {
+  content: "SALE";
+  position: absolute;
+  top: -32px;
+  left: -30px;
+  color: white;
+  background-color: red;
+  padding: 2px 10px;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: 10px solid white;
+  width: 100%;
+}
+
+button:hover {
+  background-color: white;
+  border: 10px solid black;
+  color: black;
+}
+
+.color {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+.blue{
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
