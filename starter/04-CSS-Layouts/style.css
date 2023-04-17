@@ -2,7 +2,9 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+/* css devs usually add this to their code */
 
 /* PAGE SECTIONS */
 body {
@@ -14,7 +16,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 95%;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -50,8 +52,11 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  /* this border-box is a fucking trick :)  */
+  /* it's will set the height and width including the padding,
+  not exclude it as default  */
 }
 
 /* SMALLER ELEMENTS */
@@ -134,6 +139,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -265,3 +271,50 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOAT */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  /* tù vãi loz */
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* hack for clearing float => avoiding the collapsing element */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  width: 65%;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+
+footer {
+  clear: both;
+}
