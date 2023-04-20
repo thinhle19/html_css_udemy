@@ -8,30 +8,41 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: flex-end;
+        order: -1;
       }
       .el--5 {
         background-color: palevioletred;
       }
       .el--6 {
         background-color: steelblue;
+        flex-grow: 2;
       }
       .el--7 {
         background-color: yellow;
+        flex-grow: 1;
       }
       .el--8 {
         background-color: crimson;
       }
-
+      .el {
+        /* flex-basis: 150px; */
+        flex-shrink: 1; 
+        /* not shrink if out of space */
+      }
       .container {
         /* STARTER */
         font-family: sans-serif;
@@ -40,6 +51,12 @@
         margin: 40px;
 
         /* FLEXBOX */
+        /* gap: 10px; */
+        display: flex;
+        align-items: center;
+        /* cross axis align */
+        justify-content: space-between;
+        /* main axis align */
       }
     </style>
   </head>
@@ -47,7 +64,10 @@
     <div class="container">
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
-      <div class="el el--3">CSS</div>
+      <div class="el el--3">
+        <div>a</div>
+        <div>b</div>
+      </div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>

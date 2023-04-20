@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -92,7 +92,6 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 15px;
 }
 
 ul,
@@ -203,7 +202,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -273,7 +271,7 @@ nav p {
 } */
 
 /* FLOAT */
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -282,7 +280,6 @@ nav p {
   float: left;
   margin-top: 10px;
   margin-left: 20px;
-  /* tù vãi loz */
 }
 
 h1 {
@@ -295,10 +292,10 @@ nav {
 
 .clear {
   clear: both;
-}
+} */
 
 /* hack for clearing float => avoiding the collapsing element */
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   display: block;
   clear: both;
@@ -317,4 +314,46 @@ aside {
 
 footer {
   clear: both;
+} */
+
+
+/* FLEXBOX */
+.main-header {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.related li {
+  display: flex;
+  gap: 20px;
+}
+
+.related .li-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.row {
+  display: flex; 
+  flex-shrink: 0;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+  margin-left: 75px;
 }
