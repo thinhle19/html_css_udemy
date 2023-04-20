@@ -316,10 +316,9 @@ footer {
   clear: both;
 } */
 
-
 /* FLEXBOX */
 .main-header {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -329,7 +328,7 @@ footer {
   align-items: center;
   gap: 30px;
 }
-
+/* 
 .related li {
   display: flex;
   gap: 20px;
@@ -356,4 +355,30 @@ article {
 aside {
   flex: 0 0 300px;
   margin-left: 75px;
+} */
+
+/* GRID */
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 75px; 
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+article {
+}
+
+aside {
+  /* align-self: self-start; */
+}
+
+footer {
+  grid-column: 1/-1;
+  background-color: #1098ad;
 }
