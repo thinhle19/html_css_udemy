@@ -6,6 +6,15 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+/* 
+ICON PACK: heroicons
+*/
+
+/* 
+MAIN COLOR: #087f5b 
+GREY Color: #343a40
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +25,9 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -39,6 +50,32 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 120px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 /* ------------------------ */
@@ -64,6 +101,7 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 0 5px 3px rgba(0, 0, 0, 0.089);
   /* 44 / 52 / 62 */
 }
 
@@ -73,10 +111,15 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 /* FEATURES */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -91,6 +134,10 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -111,6 +158,16 @@ img {
 }
 
 /* CHAIRS */
+.chair { 
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.089);
+  border-radius: 12px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .chair-box {
   padding: 24px;
 }
@@ -137,6 +194,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  width: 24px;
 }
 
 .chair-price {
@@ -148,4 +208,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 12px;
+  color: #495057;
 }
